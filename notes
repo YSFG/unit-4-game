@@ -1,0 +1,81 @@
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+
+var $targetNumber = document.getElementById("randomNumber");
+var $wins = document.getElementById("wins");
+var $losses = document.getElementById("losses");
+var $one = document.getElementById("one");
+var $two = document.getElementById("two");
+var $three = document.getElementById("three");
+var $four = document.getElementById("four");
+var $totalScore = document.getElementById("totalScore");
+
+
+
+
+ $('#randomNumber').text(Random);
+    $('#randomNumber').text(Random);
+
+one= Math.floor(Math.random()*11+1);
+    two= Math.floor(Math.random()*11+1);
+    three= Math.floor(Math.random()*11+1);
+    four= Math.floor(Math.random()*11+1);
+    userTotal= 0;
+    $('#totalScore').text(userTotal);
+    } 
+
+//click for crystals
+  $('#one').on ('click', function(){
+    userTotal = userTotal + one;
+    console.log("New userTotal= " + userTotal);
+    $('#totalScore').text(userTotal); 
+          //sets win/lose conditions
+        if (userTotal == Random){
+          yay();
+        }
+        else if ( userTotal > Random){
+          loser();
+        }   
+  })  
+  $('#two').on ('click', function(){
+    userTotal = userTotal + two;
+    console.log("New userTotal= " + userTotal);
+    $('#totalScore').text(userTotal); 
+        if (userTotal == Random){
+          yay();
+        }
+        else if ( userTotal > Random){
+          loser();
+        } 
+  })  
+  $('#three').on ('click', function(){
+    userTotal = userTotal + three;
+    console.log("New userTotal= " + userTotal);
+    $('#totalScore').text(userTotal);
+          if (userTotal == Random){
+          yay();
+        }
+        else if ( userTotal > Random){
+          loser();
+        } 
+  })  
+  $('#four').on ('click', function(){
+    userTotal = userTotal + four;
+    console.log("New userTotal= " + userTotal);
+    $('#totalScore').text(userTotal); 
+          if (userTotal == Random){
+          yay();
+        }
+        else if ( userTotal > Random){
+          loser();
+        }
+    })
+})
+

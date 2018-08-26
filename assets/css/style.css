@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+/* DIVs */
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    margin-left: 10px;
+}
+
+h1 {
+   
+    width: 41%;
+    text-align: center;
+    margin-top: 11px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(49, 48, 48);
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 10px;
+    }
+
+p {
+    background-color: #fff;
+    color: rgb(49, 48, 48);
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-bottom: 10px;
+    width: 41%;
+    font-weight: bold;
+}
+
+
+/* Classes */
+.guessNumber {
+    float: left;
+	width: 20%;
+    height: 60px;
+    background-color: rgb(149, 238, 208);
+}
+.winsAndlosses{
+    float: left;
+	width: 20%;
+    height: 60px;
+    margin-left: 13px;
+    font-size: 10px;
+    background-color: rgb(4, 199, 134);
+    padding-left: 5px;
+    
+}
+.crystals{
+	clear: both;
+}
+.crystalImg{
+    height: 60px;
+    margin-top: 10px;
+    border: 1px solid rgb(49, 48, 48); 
+    
+}
+
+.totalScore{
+    float: left;
+    width: 41%;
+    height: 70px;
+    background-color: rgb(49, 48, 48);
+    color: #fff;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-bottom: 21px;
+    
+}
+
+/* IDs */
+#round {
+    padding-top: 10px;
+    width: 4.75%;
+}
+@media screen and (max-width: 768px){
+
+    h1{
+        width: 100%;
+    }
+    p{
+        width: 100%;
+        
+    }
+    }
+
+
+@media screen and (max-width: 640px){
+
+    h1{
+        width: 100%;
+    }
+    p{
+        width: 100%;
+        
+    }
+    }
